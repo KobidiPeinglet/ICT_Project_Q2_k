@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrambled Recipe</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+      background-image: url(Egg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .navbar-custom {
+      background-color: #e0b460; 
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #fff;
+      justify-content: center;
+      margin: 0 5px;
+    }
+    .nav-item{
+      padding: 3px;
+      gap: 3px;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #d1ecf1; 
+    }
+    input[type="text"]{
+      padding: 5px;
+      width: 100%;
+      margin: 1px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .Recipe-container{
+      background-color: wheat;
+      opacity: 0.9;
+      color: black;
+      padding: 20px;
+      max-width: 800px;
+      margin: 50px auto;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+    .head{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .ingre{
+      border: 1px solid;
+      margin: none;
+    }
+    p{
+      margin: 12px;
+      margin-top: 9px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#"> <img src="logo.png" class="img-fluid mb-2" width="30" height="auto">Eggs Galore Goodness</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Project.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categories.html">CATEGORIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_Us.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Submit_Recipe.html">SUBMIT RECIPE</a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="text" name="search" id="search" placeholder="Search Here">
+                    </li>
+                    <li class="nav-item">
+                      <button class="btn btn-warning">Search</button>
+                    </li>
+                </ul>
+          </div>
+    </div>
+  </nav>
+
+  <div class="Recipe-container">
+    <div class="head">
+      <img src="ScrambledEgg.png">
+    
+      <div class="Ingredients">
+        <h2>Ingredients:</h2>
+        <div class="ingre"><p>3 large eggs</p></div>
+        <div class="ingre"><p>3 tablespoons whole milk</p></div>
+        <div class="ingre"><p>Salt and pepper</p></div>
+        <div class="ingre"><p>1 tbs unsalted butter</p></div>
+        <div class="ingre"><p>Fresh chopped herbs to serve (chives or parsley)</p></div>
+      </div>
+      </div>
+        <div class="Instructions">
+        <h2>Instructions:</h2> <br>
+          <ol>
+            <li>Whisk the eggs: Whisk 3 large eggs, 1 pinch of kosher salt, 1 grind of black pepper and 3 tablespoons whole milk together until light and foamy.</li>
+          <br>
+            <li>TIP: Odds are you're going to be serving these on a plate. If so, I strongly suggest you park an ovensafe one in a low oven or in hot water while you're cooking. Cold plates suck the heat right out of food.</li>
+          <br>
+            <li>Add to the pan: Add 1 tablespoon unsalted butter to a 10-to-12-inch nonstick skillet and put it over high heat. When the butter bubbles (after about a minute), pour the eggs straight into the middle of the pan, which will force the butter to the edges, where it's needed.</li>
+          <br>
+            <li>Scramble the eggs: Stir slowly with a rubber or silicone spatula. As soon as curds (big soft lumps) of eggs begin to form, drop the heat to low and shift from stirring to folding the curds over on themselves while gently shaking the pan with the other hand.</li>
+          <br>
+            <li>Let rest: As soon as no more liquidous egg is running around the pan, kill the heat and gently transfer the scramble to the warmed plate. Let the eggs rest for 1 minute to finish cooking before serving.</li>
+          </ol>
+      </div>
+      </div>
+
+  <!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

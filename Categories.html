@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Categories</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+      background-image: url(Egg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .navbar-custom {
+      background-color: #e0b460; 
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #fff;
+      justify-content: center;
+      margin: 0 5px;
+    }
+    .nav-item{
+      padding: 3px;
+      gap: 3px;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #d1ecf1; 
+    }
+    input[type="text"]{
+      padding: 5px;
+      width: 100%;
+      margin: 1px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    h1{
+      color: wheat;
+      text-align: center;
+    }
+    hr{
+      border: 5px solid whitesmoke !important;
+      border-radius: 5px;
+      margin: 10px;
+    }
+    .image-container {
+      gap: 3px;
+      margin: 7px;
+      height: auto;
+      width: 370px;
+      border: 2px solid black;
+      background-color: whitesmoke;
+      opacity: 0.9;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .image-container h4 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .image-container p {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#"> <img src="logo.png" class="img-fluid mb-2" width="30" height="auto">Eggs Galore Goodness</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Project.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Categories.html">CATEGORIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About_Us.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Submit_Recipe.html">SUBMIT RECIPE</a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="text" name="search" id="search" placeholder="Search Here">
+                    </li>
+                    <li class="nav-item">
+                      <button class="btn btn-warning">Search</button>
+                    </li>
+                </ul>
+          </div>
+    </div>
+  </nav>
+
+  <br>
+
+  <h1 style="color: wheat;">Recipes</h1>
+    <br>
+    <hr>
+  <h3 style="color: wheat;">Egg Dishes</h3>
+  <div class="row">
+    <div class="image-container col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+      <img src="ScrambledEgg.png" class="img-fluid mb-2" width="75%" alt="Centered Image">
+      <h4>Scrambled Egg</h4>
+      <p>One of the first and easiest things to cook. A Great classic in food.</p>
+      <a href="Scrambled.html" class="btn btn-warning" target="_self">Go to Recipe</a> <br>
+    </div>
+
+    <div class="image-container col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+      <img src="BoiledEgg.png" class="img-fluid mb-2" width="75%" alt="Centered Image">
+      <h4>Boiled Egg</h4>
+      <p>Simple yet nutritious, perfect for a quick breakfast.</p>
+      <a href="Boiled.html" class="btn btn-warning" target="_self">Go to Recipe</a> <br>
+    </div>
+
+    <div class="image-container col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+      <img src="SunnysideEgg.png" class="img-fluid mb-2" width="75%" alt="Centered Image">
+      <h4>Sunny Side Up</h4>
+      <p>Beautifully cooked with a bright yolk for a sunny start to your day.</p>
+      <a href="SunnySide.html" class="btn btn-warning" target="_self">Go to Recipe</a> <br>
+    </div>
+
+    <div class="image-container col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+      <img src="PoachedEgg.png" class="img-fluid mb-2" width="75%" alt="Centered Image">
+      <h4>Poached Egg</h4>
+      <p>Elegant and soft, perfect for brunch or on toast.</p>
+      <a href="Poached.html" class="btn btn-warning" target="_self">Go to Recipe</a> <br>
+    </div>
+  </div>
+
+    <br>
+
+    <br>
+    <hr>
+  <h3 style="color: wheat;">Sauces</h3>
+  <div class="row">
+    <div class="image-container col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+      <img src="mayonnaise.png" class="img-fluid mb-2" width="75%" alt="Centered Image">
+      <h4>Mayonaisse</h4>
+      <p>Mayonnaise, colloquially referred to as "mayo", is a thick, cold, and creamy sauce.</p>
+      <a href="Mayo.html" class="btn btn-warning" target="_self">Go to Recipe</a> <br>
+    </div>
+
+    <div class="image-container col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+      <img src="Hollandaise.png" class="img-fluid mb-2" width="75%" alt="Centered Image">
+      <h4>Hollandaise Sauce</h4>
+      <p>a creamy sauce of melted butter, egg yolks, and lemon juice or vinegar, served especially with fish.</p>
+      <a href="Hollandaise.html" class="btn btn-warning" target="_self">Go to Recipe</a> <br>
+    </div>
+
+    <div class="image-container col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+      <img src="Dressing.png" class="img-fluid mb-2" width="75%" alt="Centered Image">
+      <h4>Dressing</h4>
+      <p>Egg dressing is a creamy, flavorful mixture often used as a topping or binder for salads.</p>
+      <a href="Dressing.html" class="btn btn-warning" target="_self">Go to Recipe</a> <br>
+    </div>
+
+    <div class="image-container col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+      <img src="carbonara.png" class="img-fluid mb-2" width="75%" alt="Centered Image">
+      <h4>Carbonara Sauce</h4>
+      <p>Carbonara is an Italian sauce for pasta which appears to have emerged at some point after the Second World War.</p>
+      <a href="Carbonara Sauce.html" class="btn btn-warning" target="_self">Go to Recipe</a> <br>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
